@@ -4,6 +4,7 @@ This repository gathers my solutions to challenges from [LeetCode](https://leetc
 
 #### Solutions
 
-| # | Title | Solution | Difficulty |
-|---|-------|----------|-------------|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/description/) | [Java](src/com/github/olvmat/leetcodesolutions/TwoSum.java) | Easy |
+| # | Title                                                                             | Solution                                                              | Difficulty |
+|---|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------|------------|
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/description/)                     | [Java](src/com/github/olvmat/leetcodesolutions/TwoSum.java)           | Easy       |
+| 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/description/) | [Java](src/com/github/olvmat/leetcodesolutions/PalindromeNumber.java) | Easy       |
