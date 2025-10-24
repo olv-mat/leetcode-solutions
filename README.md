@@ -4,8 +4,9 @@ This repository gathers my solutions to challenges from [LeetCode](https://leetc
 
 #### Solutions
 
-| #  | Title                                                                             | Solution                                                              | Difficulty |
-|----|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------|------------|
-| 1  | [Two Sum](https://leetcode.com/problems/two-sum/description/)                     | [Java](src/com/github/olvmat/leetcodesolutions/TwoSum.java)           | Easy       |
-| 9  | [Palindrome Number](https://leetcode.com/problems/palindrome-number/description/) | [Java](src/com/github/olvmat/leetcodesolutions/PalindromeNumber.java) | Easy       |
-| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/)   | [Java](src/com/github/olvmat/leetcodesolutions/RomanToInteger.java)   | Easy       |
+| #  | Title                                                                                     | Solution                                                                 | Difficulty |
+|----|-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|------------|
+| 1  | [Two Sum](https://leetcode.com/problems/two-sum/description/)                             | [Java](src/com/github/olvmat/leetcodesolutions/TwoSum.java)              | Easy       |
+| 9  | [Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)         | [Java](src/com/github/olvmat/leetcodesolutions/PalindromeNumber.java)    | Easy       |
+| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/)           | [Java](src/com/github/olvmat/leetcodesolutions/RomanToInteger.java)      | Easy       |
+| 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | [Java](src/com/github/olvmat/leetcodesolutions/LongestCommonPrefix.java) | Easy       |
