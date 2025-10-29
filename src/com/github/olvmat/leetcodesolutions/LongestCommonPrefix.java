@@ -3,45 +3,21 @@ package com.github.olvmat.leetcodesolutions;
 import java.util.ArrayList;
 import java.util.List;
 
+// This is a revised version of the challenge. Please refer to the commit history to see the original solution.
 public class LongestCommonPrefix {
     public static void main(String[] args) {
-        List<String> stringsList = getStringsList();
-        String commonPrefix = longestCommonPrefix(stringsList);
-        System.out.println("Common Prefix: " + commonPrefix);
+        List<String> strings = new ArrayList<>(List.of("flower", "flow", "flight"));
+        System.out.println(longestCommonPrefix(strings));
     }
 
     public static String longestCommonPrefix(List<String> strings) {
-        StringBuilder commonPrefix = new StringBuilder();
-        for (int i = 0; i < strings.size(); i++) {
-            String currentWord = strings.get(i);
-            int currentWordLength = currentWord.length();
-            int commonPrefixLength = commonPrefix.length();
-            if (i == 0) {
-                commonPrefix.append(currentWord);
-            } else {
-                if (commonPrefixLength > currentWordLength) {
-                    commonPrefix.delete(currentWordLength, commonPrefixLength);
-                }
-                int foundCharacters = 0;
-                for (char character : currentWord.toCharArray()) {
-                    String stringCharacter = String.valueOf(character);
-                    int commonPrefixIndex = commonPrefix.indexOf(stringCharacter);
-                    if (commonPrefixIndex == -1) {
-                        commonPrefix.delete(foundCharacters, commonPrefixLength);
-                    } else {
-                        foundCharacters ++;
-                    }
-                }
+        String prefix = strings.getFirst();
+        for (int i = 1; i < strings.size(); i++) {
+            while (strings.get(i).indexOf(prefix) != 0) {
+                prefix = prefix.substring(0, prefix.length() - 1);
+                if (prefix.isEmpty()) return "";
             }
         }
-        return commonPrefix.toString();
-    }
-
-    public static List<String> getStringsList() {
-        List<String> strings = new ArrayList<>();
-        strings.add("flower");
-        strings.add("flow");
-        strings.add("flight");
-        return strings;
+        return prefix;
     }
 }

@@ -6,7 +6,7 @@ import java.util.Map;
 // This is a revised version of the challenge. Please refer to the commit history to see the original solution.
 public class RomanToInteger {
     public static void main(String[] args) {
-        System.out.println(romanToInt("CMLXIII"));
+        System.out.println(romanToInt("MCMXCIV"));
     }
 
     public static int romanToInt(String s) {
