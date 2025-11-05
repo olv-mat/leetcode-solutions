@@ -1,13 +1,17 @@
 package com.github.olvmat.leetcodesolutions;
 
-public class FirstOccurrenceString {
+public class IndexFirstOccurrenceString {
     public static void main(String[] args) {
-        System.out.println(firstOccurrenceString(
-                "leetcode", "leeto"));
+        System.out.println(indexFirstOccurrenceString(
+                "leetcode",
+                "leeto"
+        ));
     }
 
-    public static int firstOccurrenceString(
-            String haystack, String needle) {
+    public static int indexFirstOccurrenceString(
+            String haystack,
+            String needle
+    ) {
         int windowLength = needle.length();
         int haystackLength = haystack.length();
         if (windowLength > haystackLength) return -1;
